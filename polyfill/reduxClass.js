@@ -12,7 +12,7 @@ class Redux{
     getState(){
         return state;
     }
-     dispatch(action){
+    dispatch(action){
         state = reducer(state, action);
         listeners.forEach((listener)=>{
             listener()
